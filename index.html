@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>🌡️ Conversor de Temperatura</h1>
+        
+        <div class="input-group">
+            <label for="celsiusInput">Temperatura en grados Celsius:</label>
+            <input 
+                type="text" 
+                id="celsiusInput" 
+                placeholder="Ingresa la temperatura (ej: 25)"
+            >
+        </div>
+        
+        <button onclick="convertTemperature()">Convertir Temperatura</button>
+        
+        <div id="errorMessage" class="error"></div>
+        
+        <div id="results" class="results">
+            <h3>Resultados de la conversión:</h3>
+            <div id="fahrenheitResult" class="result-item"></div>
+            <div id="kelvinResult" class="result-item"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
